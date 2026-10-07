@@ -1,0 +1,1044 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="description"
+    content="Portfolio of Prashanth — AI & Machine Learning Engineer specializing in intelligent, data-driven solutions.">
+  <title>Prashanth | AI & Machine Learning Engineer</title>
+
+  <!-- Google Fonts — Plus Jakarta Sans, Inter, Press Start 2P & Silkscreen -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link
+    href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&family=Plus+Jakarta+Sans:wght@400;500;600;700;800&family=Press+Start+2P&family=Silkscreen:wght@400;700&display=swap"
+    rel="stylesheet">
+
+  <!-- Remix Icon CDN for clean modern icons -->
+  <link href="https://cdn.jsdelivr.net/npm/remixicon@3.5.0/fonts/remixicon.css" rel="stylesheet">
+
+  <!-- Main Stylesheet -->
+  <link rel="stylesheet" href="index.css">
+</head>
+
+<body class="has-vertical-nav">
+
+  <!-- Mobile Top Bar for small screens -->
+  <div class="mobile-top-bar" aria-label="Mobile navigation header">
+    <a href="#hero" class="mobile-logo">
+      <span class="logo-accent">&lt;/&gt;</span> Prashanth<span class="logo-dot">.</span>
+    </a>
+    <button id="mobile-menu-toggle" class="mobile-menu-btn" aria-label="Toggle navigation menu" aria-expanded="false">
+      <i class="ri-menu-line icon-menu"></i>
+      <i class="ri-close-line icon-close"></i>
+    </button>
+  </div>
+
+  <!-- Mobile Overlay Backdrop -->
+  <div id="nav-backdrop" class="nav-backdrop" aria-hidden="true"></div>
+
+  <!-- ============================================================
+       VERTICAL NAVBAR — Left Side Navigation Bar
+       ============================================================ -->
+  <aside id="vertical-sidebar" class="vertical-sidebar" aria-label="Main Navigation Sidebar">
+    <div class="sidebar-header">
+      <a href="#hero" class="sidebar-logo">
+        <span class="logo-accent">&lt;/&gt;</span>
+        <span class="logo-text">Prashanth<span class="logo-dot">.</span></span>
+      </a>
+      <span class="sidebar-tagline">AI / ML Engineer</span>
+    </div>
+
+    <!-- Vertical Navigation Links -->
+    <nav class="sidebar-nav" aria-label="Vertical navigation links">
+      <ul class="sidebar-nav-list">
+        <li>
+          <a href="#hero" class="sidebar-link active" data-nav="hero">
+            <i class="ri-home-4-line nav-icon"></i>
+            <span class="link-text">Home</span>
+          </a>
+        </li>
+        <li>
+          <a href="#about" class="sidebar-link" data-nav="about">
+            <i class="ri-user-3-line nav-icon"></i>
+            <span class="link-text">About Me</span>
+          </a>
+        </li>
+        <li>
+          <a href="#skills" class="sidebar-link" data-nav="skills">
+            <i class="ri-brain-line nav-icon"></i>
+            <span class="link-text">Skills</span>
+          </a>
+        </li>
+        <li>
+          <a href="#timeline" class="sidebar-link" data-nav="timeline">
+            <i class="ri-time-line nav-icon"></i>
+            <span class="link-text">Timeline</span>
+          </a>
+        </li>
+        <li>
+          <a href="#projects" class="sidebar-link" data-nav="projects">
+            <i class="ri-folder-code-line nav-icon"></i>
+            <span class="link-text">Projects</span>
+          </a>
+        </li>
+        <li>
+          <a href="#video-highlight" class="sidebar-link" data-nav="video-highlight">
+            <i class="ri-movie-line nav-icon"></i>
+            <span class="link-text">Video Spotlight</span>
+            <span class="badge-new">PIXEL</span>
+          </a>
+        </li>
+        <li>
+          <a href="#testimonials" class="sidebar-link" data-nav="testimonials">
+            <i class="ri-chat-quote-line nav-icon"></i>
+            <span class="link-text">Testimonials</span>
+          </a>
+        </li>
+        <li>
+          <a href="#chat" class="sidebar-link" data-nav="chat">
+            <i class="ri-message-3-line nav-icon"></i>
+            <span class="link-text">Chat</span>
+            <span class="badge-new">AI</span>
+          </a>
+        </li>
+        <li>
+          <a href="#contact" class="sidebar-link" data-nav="contact">
+            <i class="ri-mail-send-line nav-icon"></i>
+            <span class="link-text">Contact</span>
+          </a>
+        </li>
+      </ul>
+    </nav>
+
+    <!-- Sidebar Footer & Controls -->
+    <div class="sidebar-footer">
+      <!-- Dark/Light Theme Toggle -->
+      <button id="night-mode-toggle" type="button" class="theme-toggle-btn" aria-label="Toggle dark mode">
+        <span class="toggle-icon-wrap">
+          <svg class="icon-sun" xmlns="http://www.w3.org/2000/svg" width="18" height="18" viewBox="0 0 24 24"
+            fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+            <circle cx="12" cy="12" r="5" />
+            <line x1="12" y1="1" x2="12" y2="3" />
+            <line x1="12" y1="21" x2="12" y2="23" />
+            <line x1="4.22" y1="4.22" x2="5.64" y2="5.64" />
+            <line x1="18.36" y1="18.36" x2="19.78" y2="19.78" />
+            <line x1="1" y1="12" x2="3" y2="12" />
+            <line x1="21" y1="12" x2="23" y2="12" />
+            <line x1="4.22" y1="19.78" x2="5.64" y2="18.36" />
+            <line x1="18.36" y1="5.64" x2="19.78" y2="4.22" />
+          </svg>
+          <svg class="icon-moon" xmlns="http://www.w3.org/2000/svg" width="18" height="18" viewBox="0 0 24 24"
+            fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+            <path d="M21 12.79A9 9 0 1 1 11.21 3 7 7 0 0 0 21 12.79z" />
+          </svg>
+        </span>
+        <span class="theme-label">Dark Mode</span>
+      </button>
+
+      <!-- Quick Social Icons -->
+      <div class="sidebar-socials">
+        <a href="https://github.com" target="_blank" aria-label="GitHub Profile"><i class="ri-github-fill"></i></a>
+        <a href="https://linkedin.com" target="_blank" aria-label="LinkedIn Profile"><i
+            class="ri-linkedin-fill"></i></a>
+        <a href="mailto:contact@prashanth.dev" aria-label="Email Me"><i class="ri-mail-line"></i></a>
+      </div>
+    </div>
+  </aside>
+
+  <!-- ============================================================
+       MAIN CONTENT WRAPPER
+       ============================================================ -->
+  <main id="main-content" class="page-main-content">
+
+    <!-- HOME / HERO SECTION -->
+    <section id="hero" aria-label="Hero introduction">
+      <div class="hero-bg-overlay"></div>
+
+      <div class="hero-container">
+        <div class="hero-badge">
+          <span class="status-dot"></span>
+          <span>Open for AI/ML Internships &amp; Roles</span>
+        </div>
+
+        <h1 class="hero-title">
+          Building <span class="gradient-text">Intelligent</span> &amp; <br>
+          Data-Driven Solutions
+        </h1>
+
+        <p class="hero-subtitle">
+          Hi, I'm <strong>Prashanth</strong> — an AI &amp; Machine Learning Specialist passionate about turning complex
+          data into predictive intelligence, statistical insights, and real-world impact.
+        </p>
+
+        <div class="hero-cta-group">
+          <a href="#projects" class="btn btn-primary btn-lg">
+            <span>Explore Projects</span>
+            <i class="ri-arrow-right-line"></i>
+          </a>
+          <a href="#contact" class="btn btn-secondary btn-lg">
+            <i class="ri-mail-send-line"></i>
+            <span>Get In Touch</span>
+          </a>
+        </div>
+
+        <!-- Tech stack highlight pills -->
+        <div class="hero-tech-stack">
+          <span class="tech-stack-label">Core Expertise:</span>
+          <div class="tech-pills">
+            <span class="tech-pill"><i class="ri-code-s-slash-line"></i> Python</span>
+            <span class="tech-pill"><i class="ri-cpu-line"></i> Machine Learning</span>
+            <span class="tech-pill"><i class="ri-database-2-line"></i> SQL &amp; Data Analysis</span>
+            <span class="tech-pill"><i class="ri-brain-line"></i> Deep Learning</span>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- ABOUT ME SECTION -->
+    <section id="about" class="section-padding" aria-label="About me">
+      <div class="container">
+        <div class="section-header text-center">
+          <span class="section-subtitle">Biography</span>
+          <h2 class="section-title">About Me</h2>
+          <div class="section-divider"></div>
+        </div>
+
+        <div class="about-grid">
+          <!-- Left Column: Profile Card & Quick Stats -->
+          <div class="about-image-column">
+            <div class="about-image-card">
+              <div class="image-frame">
+                <img src="justin.jpeg" alt="Prashanth Profile Photo" class="profile-img">
+                <div class="image-glass-card">
+                  <i class="ri-pulse-line card-icon"></i>
+                  <div>
+                    <strong>Prashanth</strong>
+                    <span>AI &amp; Software Engineer</span>
+                  </div>
+                </div>
+              </div>
+            </div>
+
+            <!-- Stats Counter Bar -->
+            <div class="about-stats-grid">
+              <div class="stat-card">
+                <span class="stat-number">6+</span>
+                <span class="stat-label">ML Projects</span>
+              </div>
+              <div class="stat-card">
+                <span class="stat-number">1</span>
+                <span class="stat-label">Internship</span>
+              </div>
+              <div class="stat-card">
+                <span class="stat-number">100%</span>
+                <span class="stat-label">Dedication</span>
+              </div>
+            </div>
+          </div>
+
+          <!-- Right Column: Bio, Highlights & Personal Interests -->
+          <div class="about-content">
+            <h3 class="about-heading">Passionate about Intelligent Systems &amp; Data Engineering</h3>
+
+            <p class="about-desc">
+              I am an enthusiastic Artificial Intelligence and Machine Learning student with a solid foundation in
+              software engineering principles. I specialize in turning raw data into actionable intelligence through
+              robust statistical modeling, clean data pipelines, and scalable algorithms.
+            </p>
+
+            <p class="about-desc">
+              During my recent <strong>AI/ML Internship</strong>, I gained hands-on experience building, evaluating, and
+              tuning supervised and unsupervised machine learning models using <strong>Python, NumPy, Pandas,
+                Scikit-learn, Matplotlib, and SQL</strong>.
+            </p>
+
+            <!-- Career Highlights -->
+            <div class="about-highlights">
+              <div class="highlight-item">
+                <div class="highlight-icon"><i class="ri-award-line"></i></div>
+                <div>
+                  <h4>Career &amp; Academic Highlights</h4>
+                  <p>Developed predictive regression and classification models including House Price Prediction, Spam
+                    Detection, and Customer Segmentation.</p>
+                </div>
+              </div>
+
+              <div class="highlight-item">
+                <div class="highlight-icon"><i class="ri-heart-pulse-line"></i></div>
+                <div>
+                  <h4>Personal Interests &amp; Passions</h4>
+                  <p>Fascinated by Deep Learning, Natural Language Processing, Open-Source collaboration, and building
+                    clean web interfaces.</p>
+                </div>
+              </div>
+            </div>
+
+            <!-- Key Interest Pills -->
+            <div class="interests-pills-group">
+              <span class="interest-pill"><i class="ri-brain-line"></i> AI Research</span>
+              <span class="interest-pill"><i class="ri-line-chart-line"></i> Predictive Modeling</span>
+              <span class="interest-pill"><i class="ri-database-line"></i> Data Engineering</span>
+              <span class="interest-pill"><i class="ri-code-s-slash-line"></i> Clean Code</span>
+            </div>
+
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- ============================================================
+         SKILLS SECTION
+         Core technical competencies, frameworks, tools & progress bars
+         ============================================================ -->
+    <section id="skills" class="section-padding bg-alt" aria-label="Skills">
+      <div class="container">
+        <div class="section-header text-center">
+          <span class="section-subtitle">Technical Proficiency</span>
+          <h2 class="section-title">Skills &amp; Capabilities</h2>
+          <div class="section-divider"></div>
+        </div>
+
+        <!-- 1. CORE COMPETENCY PROGRESS BARS -->
+        <!-- Explanatory Comment: Highlighting top 6 core technical competencies with animated percentage progress bars -->
+        <div class="skills-progress-wrapper">
+          <h3 class="skills-subheading"><i class="ri-bar-chart-fill"></i> Core Competency Levels</h3>
+          <div class="progress-grid">
+
+            <!-- Skill 1: Python Programming (Core language proficiency) -->
+            <div class="progress-card">
+              <div class="progress-header">
+                <span class="progress-title"><i class="ri-file-code-line"></i> Python Programming</span>
+                <span class="progress-value">92%</span>
+              </div>
+              <div class="progress-track" title="Python proficiency: 92%">
+                <div class="progress-fill" style="width: 92%;"></div>
+              </div>
+            </div>
+
+            <!-- Skill 2: Machine Learning & Scikit-Learn (Supervised/Unsupervised modeling) -->
+            <div class="progress-card">
+              <div class="progress-header">
+                <span class="progress-title"><i class="ri-cpu-line"></i> Machine Learning &amp; Scikit-Learn</span>
+                <span class="progress-value">88%</span>
+              </div>
+              <div class="progress-track" title="Machine Learning proficiency: 88%">
+                <div class="progress-fill" style="width: 88%;"></div>
+              </div>
+            </div>
+
+            <!-- Skill 3: Exploratory Data Analysis & Viz (Pandas, NumPy, Matplotlib, Seaborn) -->
+            <div class="progress-card">
+              <div class="progress-header">
+                <span class="progress-title"><i class="ri-line-chart-line"></i> Data Analysis &amp; Visualization</span>
+                <span class="progress-value">90%</span>
+              </div>
+              <div class="progress-track" title="Data Analysis proficiency: 90%">
+                <div class="progress-fill" style="width: 90%;"></div>
+              </div>
+            </div>
+
+            <!-- Skill 4: SQL & Database Querying (Relational data extraction) -->
+            <div class="progress-card">
+              <div class="progress-header">
+                <span class="progress-title"><i class="ri-database-2-line"></i> SQL &amp; Database Management</span>
+                <span class="progress-value">82%</span>
+              </div>
+              <div class="progress-track" title="SQL proficiency: 82%">
+                <div class="progress-fill" style="width: 82%;"></div>
+              </div>
+            </div>
+
+            <!-- Skill 5: Deep Learning & Neural Networks (Foundational CNN/DNN models) -->
+            <div class="progress-card">
+              <div class="progress-header">
+                <span class="progress-title"><i class="ri-brain-line"></i> Deep Learning Fundamentals</span>
+                <span class="progress-value">78%</span>
+              </div>
+              <div class="progress-track" title="Deep Learning proficiency: 78%">
+                <div class="progress-fill" style="width: 78%;"></div>
+              </div>
+            </div>
+
+            <!-- Skill 6: Version Control & Developer Workflows (Git, GitHub, Jupyter) -->
+            <div class="progress-card">
+              <div class="progress-header">
+                <span class="progress-title"><i class="ri-git-branch-line"></i> Git, GitHub &amp; Workflows</span>
+                <span class="progress-value">85%</span>
+              </div>
+              <div class="progress-track" title="Git/GitHub proficiency: 85%">
+                <div class="progress-fill" style="width: 85%;"></div>
+              </div>
+            </div>
+
+          </div>
+        </div>
+
+        <!-- 2. CATEGORIZED SKILL CHIPS & BADGES -->
+        <!-- Explanatory Comment: Grouped technical stack categorized into Languages, ML/AI, Analytics, and Developer Tools -->
+        <div class="skills-grid">
+
+          <!-- Category A: Programming Languages -->
+          <div class="skill-category-card">
+            <div class="skill-category-header">
+              <div class="category-icon"><i class="ri-code-box-line"></i></div>
+              <h3>Programming Languages</h3>
+            </div>
+            <!-- Explanatory Comment: Primary languages utilized for AI development, data pipelines, and database querying -->
+            <div class="skill-tags">
+              <span class="skill-badge"><i class="ri-file-code-line"></i> Python</span>
+              <span class="skill-badge"><i class="ri-database-line"></i> SQL</span>
+              <span class="skill-badge"><i class="ri-code-s-slash-line"></i> HTML5 / CSS3</span>
+            </div>
+          </div>
+
+          <!-- Category B: AI & Machine Learning Frameworks -->
+          <div class="skill-category-card">
+            <div class="skill-category-header">
+              <div class="category-icon"><i class="ri-brain-line"></i></div>
+              <h3>AI &amp; Machine Learning</h3>
+            </div>
+            <!-- Explanatory Comment: Core algorithms & frameworks for supervised/unsupervised learning & NLP -->
+            <div class="skill-tags">
+              <span class="skill-badge">Scikit-learn</span>
+              <span class="skill-badge">Supervised Learning</span>
+              <span class="skill-badge">Unsupervised Learning</span>
+              <span class="skill-badge">K-Means Clustering</span>
+              <span class="skill-badge">Naive Bayes &amp; KNN</span>
+              <span class="skill-badge">Deep Learning</span>
+              <span class="skill-badge">NLP &amp; TF-IDF</span>
+            </div>
+          </div>
+
+          <!-- Category C: Data Engineering & Analytics -->
+          <div class="skill-category-card">
+            <div class="skill-category-header">
+              <div class="category-icon"><i class="ri-line-chart-line"></i></div>
+              <h3>Data &amp; Analytics</h3>
+            </div>
+            <!-- Explanatory Comment: Libraries for data manipulation, exploratory analysis, and feature engineering -->
+            <div class="skill-tags">
+              <span class="skill-badge">NumPy</span>
+              <span class="skill-badge">Pandas</span>
+              <span class="skill-badge">Matplotlib</span>
+              <span class="skill-badge">Seaborn</span>
+              <span class="skill-badge">Feature Engineering</span>
+              <span class="skill-badge">Data Cleansing</span>
+            </div>
+          </div>
+
+          <!-- Category D: Tools, IDEs & Version Control -->
+          <div class="skill-category-card">
+            <div class="skill-category-header">
+              <div class="category-icon"><i class="ri-tools-line"></i></div>
+              <h3>Tools &amp; Workflows</h3>
+            </div>
+            <!-- Explanatory Comment: Development tools, version control systems, and model benchmarking platforms -->
+            <div class="skill-tags">
+              <span class="skill-badge"><i class="ri-git-merge-line"></i> Git &amp; GitHub</span>
+              <span class="skill-badge"><i class="ri-terminal-box-line"></i> Jupyter Notebook</span>
+              <span class="skill-badge">VS Code</span>
+              <span class="skill-badge">Model Evaluation</span>
+              <span class="skill-badge">Hyperparameter Tuning</span>
+            </div>
+          </div>
+
+        </div>
+      </div>
+    </section>
+
+    <!-- ============================================================
+         TIMELINE SECTION
+         Key events: Education, Career Milestones, and Major Projects
+         ============================================================ -->
+    <section id="timeline" class="section-padding" aria-label="Experience timeline">
+      <div class="container">
+        <div class="section-header text-center">
+          <span class="section-subtitle">Career Path &amp; Milestones</span>
+          <h2 class="section-title">Timeline &amp; Journey</h2>
+          <div class="section-divider"></div>
+        </div>
+
+        <div class="vertical-timeline">
+
+          <!-- Milestone 1: AI/ML Internship -->
+          <div class="timeline-event">
+            <div class="timeline-marker"><i class="ri-briefcase-4-line"></i></div>
+            <div class="timeline-card-box">
+              <div class="timeline-header">
+                <div>
+                  <span class="role-badge badge-internship">Internship</span>
+                  <h3 class="role-title">AI / ML Intern</h3>
+                </div>
+                <span class="timeline-date"><i class="ri-calendar-line"></i> Recent Experience</span>
+              </div>
+
+              <p class="timeline-summary">
+                Gained practical industry experience developing end-to-end machine learning pipelines, data
+                preprocessing routines, and predictive algorithms.
+              </p>
+
+              <ul class="experience-list">
+                <li>Assisted in developing and implementing machine learning models for data-driven problem solving.
+                </li>
+                <li>Performed data preprocessing, cleaning, feature engineering, and exploratory data analysis using
+                  Python.</li>
+                <li>Built and evaluated ML models using <strong>NumPy, Pandas, Scikit-learn, Matplotlib, and
+                    Seaborn</strong>.</li>
+                <li>Applied supervised and unsupervised learning techniques including regression, classification, and
+                  clustering.</li>
+                <li>Worked with <strong>SQL</strong> for data extraction and analysis and <strong>Git/GitHub</strong>
+                  for version control.</li>
+              </ul>
+            </div>
+          </div>
+
+          <!-- Milestone 2: Academic Milestone / Education -->
+          <div class="timeline-event">
+            <div class="timeline-marker"><i class="ri-graduation-cap-line"></i></div>
+            <div class="timeline-card-box">
+              <div class="timeline-header">
+                <div>
+                  <span class="role-badge badge-education">Education</span>
+                  <h3 class="role-title">B.Tech in Artificial Intelligence &amp; Machine Learning</h3>
+                </div>
+                <span class="timeline-date"><i class="ri-building-4-line"></i> Degree Program</span>
+              </div>
+
+              <p class="timeline-summary">
+                Specializing in core Artificial Intelligence, Machine Learning algorithms, Data Structures, Applied
+                Statistics, and Database Management Systems.
+              </p>
+
+              <div class="timeline-tags">
+                <span class="tag">Machine Learning</span>
+                <span class="tag">Data Structures</span>
+                <span class="tag">Python &amp; SQL</span>
+                <span class="tag">Deep Learning Foundations</span>
+              </div>
+            </div>
+          </div>
+
+          <!-- Milestone 3: Major Projects & Portfolio -->
+          <div class="timeline-event">
+            <div class="timeline-marker"><i class="ri-rocket-line"></i></div>
+            <div class="timeline-card-box">
+              <div class="timeline-header">
+                <div>
+                  <span class="role-badge badge-achievement">Portfolio Milestone</span>
+                  <h3 class="role-title">6+ Machine Learning Projects Developed</h3>
+                </div>
+                <span class="timeline-date"><i class="ri-code-s-slash-line"></i> Applied Data Science</span>
+              </div>
+
+              <p class="timeline-summary">
+                Designed, implemented, and evaluated 6 diverse machine learning applications ranging from NLP spam
+                classification to customer segmentation clustering.
+              </p>
+
+              <div class="timeline-tags">
+                <span class="tag">House Price Prediction</span>
+                <span class="tag">Spam Detection NLP</span>
+                <span class="tag">Customer Segmentation</span>
+                <span class="tag">Titanic Survival ML</span>
+              </div>
+            </div>
+          </div>
+
+        </div>
+      </div>
+    </section>
+
+    <!-- PROJECTS SECTION -->
+    <section id="projects" class="section-padding bg-alt" aria-label="Projects">
+      <div class="container">
+        <div class="section-header text-center">
+          <span class="section-subtitle">Portfolio Showcase</span>
+          <h2 class="section-title">Featured Projects</h2>
+          <div class="section-divider"></div>
+        </div>
+
+        <div class="projects-grid">
+
+          <!-- Project 1 -->
+          <article class="project-card">
+            <div class="project-content">
+              <div class="project-header">
+                <div class="project-icon-box"><i class="ri-home-gear-line"></i></div>
+                <span class="project-category">Machine Learning</span>
+              </div>
+              <h3 class="project-title">House Price Prediction</h3>
+              <p class="project-description">
+                Developed a predictive machine learning model to estimate housing market prices based on property
+                location, square footage, bedroom count, and key structural features. Performed thorough EDA and
+                regression benchmarking.
+              </p>
+              <div class="project-tags">
+                <span class="tag">Python</span>
+                <span class="tag">Scikit-learn</span>
+                <span class="tag">Regression</span>
+                <span class="tag">EDA</span>
+              </div>
+            </div>
+          </article>
+
+          <!-- Project 2 -->
+          <article class="project-card">
+            <div class="project-content">
+              <div class="project-header">
+                <div class="project-icon-box"><i class="ri-graduation-cap-line"></i></div>
+                <span class="project-category">Predictive Analytics</span>
+              </div>
+              <h3 class="project-title">Student Performance Prediction</h3>
+              <p class="project-description">
+                Engineered an academic outcome forecasting model analyzing study hours, attendance rates, and prior
+                academic records to accurately predict student scores and identify at-risk learners.
+              </p>
+              <div class="project-tags">
+                <span class="tag">Python</span>
+                <span class="tag">Regression</span>
+                <span class="tag">Data Viz</span>
+              </div>
+            </div>
+          </article>
+
+          <!-- Project 3 -->
+          <article class="project-card">
+            <div class="project-content">
+              <div class="project-header">
+                <div class="project-icon-box"><i class="ri-mail-shield-line"></i></div>
+                <span class="project-category">NLP &amp; Classification</span>
+              </div>
+              <h3 class="project-title">Spam Email Detection</h3>
+              <p class="project-description">
+                Built an automated NLP spam classifier using TF-IDF feature extraction and Naive Bayes text
+                classification to accurately filter fraudulent and unwanted email messages.
+              </p>
+              <div class="project-tags">
+                <span class="tag">NLP</span>
+                <span class="tag">TF-IDF</span>
+                <span class="tag">Naive Bayes</span>
+                <span class="tag">Python</span>
+              </div>
+            </div>
+          </article>
+
+          <!-- Project 4 -->
+          <article class="project-card">
+            <div class="project-content">
+              <div class="project-header">
+                <div class="project-icon-box"><i class="ri-plant-line"></i></div>
+                <span class="project-category">Classification Models</span>
+              </div>
+              <h3 class="project-title">Iris Flower Classification</h3>
+              <p class="project-description">
+                Implemented multi-class species prediction on morphological sepal and petal features using K-Nearest
+                Neighbors, Decision Trees, and Logistic Regression with comparative metric evaluation.
+              </p>
+              <div class="project-tags">
+                <span class="tag">KNN</span>
+                <span class="tag">Decision Tree</span>
+                <span class="tag">Logistic Regression</span>
+              </div>
+            </div>
+          </article>
+
+          <!-- Project 5 -->
+          <article class="project-card">
+            <div class="project-content">
+              <div class="project-header">
+                <div class="project-icon-box"><i class="ri-group-line"></i></div>
+                <span class="project-category">Unsupervised Learning</span>
+              </div>
+              <h3 class="project-title">Customer Segmentation</h3>
+              <p class="project-description">
+                Constructed a behavioral customer clustering model using K-Means algorithm to partition buyer groups by
+                purchasing pattern, enabling targeted marketing and business analytics.
+              </p>
+              <div class="project-tags">
+                <span class="tag">K-Means</span>
+                <span class="tag">Clustering</span>
+                <span class="tag">Analytics</span>
+              </div>
+            </div>
+          </article>
+
+          <!-- Project 6 -->
+          <article class="project-card">
+            <div class="project-content">
+              <div class="project-header">
+                <div class="project-icon-box"><i class="ri-ship-line"></i></div>
+                <span class="project-category">Data Science</span>
+              </div>
+              <h3 class="project-title">Titanic Survival Prediction</h3>
+              <p class="project-description">
+                Conducted end-to-end data cleansing, missing value imputation, and feature engineering on the historic
+                Titanic dataset to construct accurate survival probability classifiers.
+              </p>
+              <div class="project-tags">
+                <span class="tag">Data Cleaning</span>
+                <span class="tag">Feature Engineering</span>
+                <span class="tag">Scikit-learn</span>
+              </div>
+            </div>
+          </article>
+
+        </div>
+      </div>
+    </section>
+
+    <!-- ============================================================
+         PORTFOLIO VIDEO HIGHLIGHT & SPOTLIGHT (Pixel Art Showcase)
+         ============================================================ -->
+    <section id="video-highlight" class="section-padding pixel-video-section" aria-label="Portfolio video showcase">
+      <div class="container">
+        <div class="section-header text-center">
+          <div class="pixel-tag-badge">
+            <span class="pixel-blink-dot"></span>
+            <span>PORTFOLIO SPOTLIGHT // LEVEL 01</span>
+          </div>
+          <h2 class="section-title">Video Introduction &amp; Walkthrough</h2>
+          <div class="section-divider"></div>
+          <p class="pixel-section-intro">
+            A featured deep-dive into core neural network architectures, intelligent data pipelines, and applied machine
+            learning engineering workflows.
+          </p>
+        </div>
+
+        <!-- Pixel Art Monitor / Arcade Cabinet Showcase Card -->
+        <div class="pixel-arcade-card">
+
+          <!-- Arcade Top HUD Header Bar -->
+          <div class="pixel-arcade-hud">
+            <div class="hud-left">
+              <div class="hud-led-group">
+                <span class="hud-led led-red" title="System Ready"></span>
+                <span class="hud-led led-yellow" title="Video Buffer Loaded"></span>
+                <span class="hud-led led-green" title="Audio Sync 100%"></span>
+              </div>
+              <span class="hud-terminal-text">
+                <i class="ri-terminal-box-line"></i> CRT_SYS://NEURAL_DEMO.MP4
+              </span>
+            </div>
+
+            <div class="hud-center">
+              <span class="hud-rec-badge">
+                <span class="rec-dot"></span> REC 60FPS
+              </span>
+            </div>
+
+            <div class="hud-right">
+              <button id="toggle-scanlines-btn" class="hud-scanline-toggle" type="button" aria-pressed="true"
+                title="Toggle retro CRT scanlines effect">
+                <i class="ri-tv-line"></i>
+                <span id="scanlines-label-text">SCANLINES: ON</span>
+              </button>
+              <span class="hud-quality-badge">1080P HD</span>
+            </div>
+          </div>
+
+          <!-- Video Screen Wrapper with Pixel Corners & Scanlines -->
+          <div class="pixel-screen-wrapper">
+            <!-- 8-Bit Pixel Corner Accents -->
+            <span class="pixel-corner corner-top-left" aria-hidden="true"></span>
+            <span class="pixel-corner corner-top-right" aria-hidden="true"></span>
+            <span class="pixel-corner corner-bottom-left" aria-hidden="true"></span>
+            <span class="pixel-corner corner-bottom-right" aria-hidden="true"></span>
+
+            <!-- Retro Scanlines Effect Layer -->
+            <div id="video-scanlines-layer" class="pixel-scanlines active" aria-hidden="true"></div>
+
+            <!-- 16:9 Responsive Video Container -->
+            <div class="video-responsive-ratio">
+              <iframe id="portfolio-highlight-iframe" src="https://www.youtube-nocookie.com/embed/aircAruvnKk"
+                title="AI & Machine Learning Portfolio Highlight: Neural Network Fundamentals"
+                allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+                referrerpolicy="strict-origin-when-cross-origin" loading="lazy" allowfullscreen>
+              </iframe>
+            </div>
+          </div>
+
+          <!-- Pixel Arcade Bottom Bezel / Speaker Grille Detail -->
+          <div class="pixel-arcade-bezel">
+            <div class="speaker-grille">
+              <span></span><span></span><span></span><span></span><span></span><span></span>
+            </div>
+            <div class="arcade-status-text">
+              <span class="pixel-chip-mono">⚡ 64-BIT AI ENGINE</span>
+              <span class="pixel-chip-mono">🎮 AUDIO: HI-FI STEREO</span>
+            </div>
+            <div class="speaker-grille">
+              <span></span><span></span><span></span><span></span><span></span><span></span>
+            </div>
+          </div>
+
+          <!-- Video Caption & Deep Dive Information Card -->
+          <div class="pixel-caption-box">
+            <div class="caption-head-bar">
+              <div class="caption-title-wrap">
+                <div class="caption-icon-badge">
+                  <i class="ri-film-line"></i>
+                </div>
+                <div>
+                  <span class="caption-badge-label">SPOTLIGHT WALKTHROUGH</span>
+                  <h3 class="caption-main-title">Deep Learning, Gradient Descent &amp; Backpropagation Architecture</h3>
+                </div>
+              </div>
+              <div class="caption-meta-stats">
+                <span class="meta-stat-pill"><i class="ri-time-line"></i> ~18 Mins</span>
+                <span class="meta-stat-pill"><i class="ri-brain-line"></i> Deep Learning</span>
+                <span class="meta-stat-pill"><i class="ri-check-double-line"></i> HD 1080p</span>
+              </div>
+            </div>
+
+            <!-- Short Explanatory Caption -->
+            <p class="caption-summary-text">
+              This featured highlight video walks through the intuitive mathematical foundations of deep neural networks
+              — illustrating how weights and biases calculate activation states, how cost functions compute gradient
+              descent vectors, and how backpropagation updates parameters across high-dimensional feature spaces. These
+              foundational concepts drive the predictive accuracy and architecture design of all my applied machine
+              learning models.
+            </p>
+
+            <!-- Key Takeaway Pixel Highlights -->
+            <div class="caption-takeaways-grid">
+              <div class="takeaway-pill">
+                <i class="ri-checkbox-circle-fill"></i>
+                <span>Multi-Layer Perceptron Forward Propagation</span>
+              </div>
+              <div class="takeaway-pill">
+                <i class="ri-checkbox-circle-fill"></i>
+                <span>Stochastic Gradient Descent &amp; Cost Loss Optimization</span>
+              </div>
+              <div class="takeaway-pill">
+                <i class="ri-checkbox-circle-fill"></i>
+                <span>High-Dimensional Matrix Feature Transformation</span>
+              </div>
+              <div class="takeaway-pill">
+                <i class="ri-checkbox-circle-fill"></i>
+                <span>Supervised Classification &amp; Benchmark Evaluation</span>
+              </div>
+            </div>
+
+            <!-- Action Buttons -->
+            <div class="caption-actions">
+              <a href="https://www.youtube.com/watch?v=aircAruvnKk" target="_blank" rel="noopener noreferrer"
+                class="btn btn-pixel btn-primary">
+                <i class="ri-youtube-fill"></i>
+                <span>Watch on YouTube</span>
+              </a>
+              <a href="#projects" class="btn btn-pixel btn-secondary">
+                <i class="ri-folder-open-line"></i>
+                <span>Explore ML Projects</span>
+              </a>
+              <button type="button" class="btn btn-pixel btn-secondary" onclick="copyVideoLink(this)">
+                <i class="ri-clipboard-line"></i>
+                <span class="copy-btn-text">Share &amp; Copy URL</span>
+              </button>
+            </div>
+          </div>
+
+        </div>
+      </div>
+    </section>
+
+    <!-- TESTIMONIALS SECTION -->
+    <section id="testimonials" class="section-padding" aria-label="Testimonials">
+      <div class="container">
+        <div class="section-header text-center">
+          <span class="section-subtitle">Endorsements</span>
+          <h2 class="section-title">Testimonials</h2>
+          <div class="section-divider"></div>
+        </div>
+
+        <div class="testimonials-grid">
+          <div class="testimonial-card">
+            <div class="testimonial-quote"><i class="ri-double-quotes-l"></i></div>
+            <p class="testimonial-text">
+              "Prashanth demonstrates exceptional data analytical skills and a fast learning curve. His work on
+              predictive modeling and data preprocessing was thorough, well-documented, and accurate."
+            </p>
+            <div class="testimonial-author">
+              <div class="author-avatar"><i class="ri-user-star-line"></i></div>
+              <div>
+                <strong>Project Lead</strong>
+                <span>AI &amp; Data Science Division</span>
+              </div>
+            </div>
+          </div>
+
+          <div class="testimonial-card">
+            <div class="testimonial-quote"><i class="ri-double-quotes-l"></i></div>
+            <p class="testimonial-text">
+              "A dedicated team player with strong technical intuition in Python and ML algorithms. Prashanth
+              consistently delivers clean code and clear analytical insights."
+            </p>
+            <div class="testimonial-author">
+              <div class="author-avatar"><i class="ri-team-line"></i></div>
+              <div>
+                <strong>Academic Mentor</strong>
+                <span>Department of Computer Science</span>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- CHAT SECTION (Interactive AI Assistant Demo) -->
+    <section id="chat" class="section-padding bg-alt" aria-label="Interactive AI Chat Assistant">
+      <div class="container">
+        <div class="section-header text-center">
+          <span class="section-subtitle">Interactive AI Assistant</span>
+          <h2 class="section-title">Ask AI About Prashanth</h2>
+          <div class="section-divider"></div>
+        </div>
+
+        <div class="chat-widget-card">
+          <div class="chat-header">
+            <div class="chat-bot-info">
+              <div class="bot-avatar"><i class="ri-robot-line"></i></div>
+              <div>
+                <strong>Prashanth's Portfolio Assistant</strong>
+                <span class="bot-status"><span class="status-dot"></span> Online &amp; Ready</span>
+              </div>
+            </div>
+            <span class="chat-badge">AI Demo</span>
+          </div>
+
+          <div id="chat-messages" class="chat-messages">
+            <div class="chat-message bot">
+              <div class="msg-avatar"><i class="ri-robot-line"></i></div>
+              <div class="msg-bubble">
+                Hello! I'm Prashanth's AI Assistant. Ask me anything about his ML projects, technical skills, or
+                internship background!
+              </div>
+            </div>
+          </div>
+
+          <div class="chat-suggestions">
+            <button type="button" class="chip-prompt"
+              onclick="sendQuickPrompt('What are Prashanth\'s main ML skills?')">What are Prashanth's ML
+              skills?</button>
+            <button type="button" class="chip-prompt"
+              onclick="sendQuickPrompt('Tell me about his Titanic project')">Tell me about Titanic project</button>
+            <button type="button" class="chip-prompt" onclick="sendQuickPrompt('Is he open for internships?')">Is he
+              open for internships?</button>
+          </div>
+
+          <form id="chat-form" class="chat-input-form" onsubmit="handleChatSubmit(event)">
+            <input type="text" id="chat-input" placeholder="Type a message or click a suggestion..." required
+              autocomplete="off">
+            <button type="submit" class="btn btn-primary btn-icon" aria-label="Send message">
+              <i class="ri-send-plane-2-fill"></i>
+            </button>
+          </form>
+        </div>
+      </div>
+    </section>
+
+    <!-- CONTACT SECTION -->
+    <section id="contact" class="section-padding" aria-label="Contact">
+      <div class="container">
+        <div class="section-header text-center">
+          <span class="section-subtitle">Get In Touch</span>
+          <h2 class="section-title">Let's Connect</h2>
+          <div class="section-divider"></div>
+        </div>
+
+        <div class="contact-grid">
+          <div class="contact-info">
+            <h3 class="contact-heading">Interested in collaborating or hiring?</h3>
+            <p class="contact-subtext">
+              I am currently seeking internship opportunities and entry-level roles in AI, Machine Learning, and Data
+              Analytics. Feel free to reach out!
+            </p>
+
+            <div class="info-items">
+              <div class="info-card">
+                <div class="info-icon"><i class="ri-mail-line"></i></div>
+                <div>
+                  <span class="info-label">Email</span>
+                  <a href="mailto:contact@prashanth.dev" class="info-value">contact@prashanth.dev</a>
+                </div>
+              </div>
+
+              <div class="info-card">
+                <div class="info-icon"><i class="ri-map-pin-line"></i></div>
+                <div>
+                  <span class="info-label">Focus Area</span>
+                  <span class="info-value">AI, Machine Learning &amp; Data Science</span>
+                </div>
+              </div>
+
+              <div class="info-card">
+                <div class="info-icon"><i class="ri-github-line"></i></div>
+                <div>
+                  <span class="info-label">GitHub</span>
+                  <a href="https://github.com" target="_blank" rel="noopener"
+                    class="info-value">github.com/prashanth</a>
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <form class="contact-form"
+            onsubmit="event.preventDefault(); alert('Thank you for reaching out! This is a demo form submission.');">
+            <div class="form-group">
+              <label for="name">Your Name</label>
+              <input type="text" id="name" required placeholder="John Doe">
+            </div>
+            <div class="form-group">
+              <label for="email">Your Email</label>
+              <input type="email" id="email" required placeholder="john@example.com">
+            </div>
+            <div class="form-group">
+              <label for="message">Message</label>
+              <textarea id="message" rows="4" required placeholder="Hi Prashanth, I'd like to discuss..."></textarea>
+            </div>
+            <button type="submit" class="btn btn-primary btn-block">
+              <span>Send Message</span>
+              <i class="ri-send-plane-fill"></i>
+            </button>
+          </form>
+        </div>
+      </div>
+    </section>
+
+  </main>
+
+  <!-- ============================================================
+       FOOTER
+       ============================================================ -->
+  <footer id="site-footer">
+    <div class="container footer-container">
+      <div class="footer-brand">
+        <a href="#hero" class="nav-logo">
+          <span class="logo-accent">&lt;/&gt;</span> Prashanth<span class="logo-dot">.</span>
+        </a>
+        <p>AI &amp; Machine Learning Specialist</p>
+      </div>
+
+      <ul class="footer-nav">
+        <li><a href="#hero">Home</a></li>
+        <li><a href="#about">About Me</a></li>
+        <li><a href="#skills">Skills</a></li>
+        <li><a href="#timeline">Timeline</a></li>
+        <li><a href="#projects">Projects</a></li>
+        <li><a href="#video-highlight">Video Spotlight</a></li>
+        <li><a href="#testimonials">Testimonials</a></li>
+        <li><a href="#chat">Chat</a></li>
+        <li><a href="#contact">Contact</a></li>
+      </ul>
+
+      <div class="footer-copy">
+        &copy; 2026 Prashanth. All rights reserved.
+      </div>
+    </div>
+  </footer>
+
+  <script src="index.js"></script>
+</body>
+
+</html>
